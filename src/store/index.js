@@ -23,7 +23,7 @@ export default new Vuex.Store({
       state.todos.push(payload)
     },
     DELETE_TODO: (state, payload) => {
-      state.todos.slice(payload.id, 1)
+      state.todos.splice(payload, 1)
     }
   },
   actions: {
